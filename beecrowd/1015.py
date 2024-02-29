@@ -1,11 +1,8 @@
 import math
-eixox = input().split()
-eixoy = input().split()
-x1 = float(eixox[0])
-x2 = float(eixox[1])
-y1 = float(eixoy[0])
-y2 = float(eixoy[1])
+x1, x2 = input().split()
+y1, y2 = input().split()
+x1, y1, x2, y2 = float(x1), float(y1), float(x2), float(y2)
 
-distancia = math.sqrt((x2 - x1) ** 2) + ((y2 - y1) ** 2)
+distancia = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-print(distancia)
+print(f"{distancia:.4f}")
